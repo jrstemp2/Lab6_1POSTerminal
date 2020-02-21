@@ -17,15 +17,15 @@ namespace POSTerminal
             inventory.InitializeInventory();
 
             Cart cart = new Cart();
-
             PlaySound(file);
-
             do
             {
                 PirateShopIntro();
                 inventory.DisplayInventory();
                 menu = IntInput("\nPlease select your option\n1. Purchase splendor (Buy an Item)\n2. Settle up! (Checkout)\n3. Clear the Seas! (Clear the console)\n" +
                     "4. Show yer loot!\n(Input a negative to hoist anchor and leave port!) >> ");
+              
+
                 switch (menu)
                 {
                     case 1:
